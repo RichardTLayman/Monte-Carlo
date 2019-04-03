@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Monte_Carlo
 {
-    class Class1
-    {
+    //public class Coord
+    //{
         struct MC
         {
 
-            double x;
-            double y;
+            public double x;
+            public double y;
 
-            public MC(random)
+            public MC(Random r)
             {
-
+                this.x = r.NextDouble();
+                this.y = r.NextDouble();
             }
 
             public MC (double x, double y)
@@ -25,12 +26,15 @@ namespace Monte_Carlo
                 this.y = y;
             }
 
+        //public class Coord
+        //{
+
             public double HypeTri(double x, double y)
             {
                 double Hyp = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
                 return Hyp;
             }
-        }
+        //}
 
     }
 }
