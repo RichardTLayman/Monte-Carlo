@@ -10,6 +10,12 @@ namespace Monte_Carlo
     {
         static void Main(string[] args)
         {
+            Random r = new Random();
+
+            Console.WriteLine("Please enter the number of points you want to see:");
+            int points = Convert.ToInt32(Console.ReadLine());
+
+            int[] MC = new int[points];
         }
     }
 }
