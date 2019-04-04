@@ -15,6 +15,7 @@ namespace Monte_Carlo
             MonteCarlo("100");
             MonteCarlo("1000");
             MonteCarlo("10000");
+            //MonteCarlo("10000000");
             Console.ReadKey();
 
             void MonteCarlo(string number)
@@ -53,3 +54,20 @@ namespace Monte_Carlo
         }
     }
 }
+
+// Why do we multiply the value from step 5 above by 4?
+// To represent a full circle, and not a quarter.
+
+//What do you observe in the output when running your program with parameters of increasing size?
+// You draw closer to the absolute value of PI.
+
+// If you run the program multiple times with the same parameter, does the output remain the same? Why or why not?
+// No. Fresh random numbers are generated each time resulting in new data.
+
+// Find a parameter that requires multiple seconds of run time. What is that parameter? How accurate is the estimated value of ?
+// 10,000,000 was 2.6 Seconds  with a result of 3.1423188
+
+//Research one other use of Monte-Carlo methods. Record it in your exercise submission and be prepared to discuss it in class.
+// Rolling Snake eyes. 1- 36 chance, or a 2.777% chance
+
+
